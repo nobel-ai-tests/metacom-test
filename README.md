@@ -1,38 +1,40 @@
 # MetaCom 2027
 
-Multi-page conference website for the 2027 edition of the International Conference on Metaverse Computing, Networking and Applications.
+Compact, multi-page conference website for the International Conference on Metaverse Computing, Networking and Applications.
 
-## Site structure
+## Pages
 
-The website is built with static HTML, CSS, and JavaScript. No build tools or package installation are required.
+- Home
+- Call for Papers
+- Author Information
+- Program
+- Committees
+- Registration
+- Venue
+- Travel Information
+- Previous Edition
 
-Primary pages include Home, About, Call for Papers, Author Information, Submission Guidelines, Main Conference Papers, Workshops and Tutorials, Posters and Demos, Work-in-Progress Papers, Artifact Evaluation, Student Research Competition, Camera-Ready Instructions, Program, Keynotes, Organizing Committee, Technical Program Committee, Technical Panels, Registration, Visa Information, Visa Letter Request, Travel Information, Hotel Information, Venue, Code of Conduct, Sponsorship, Awards, Student Travel Grants, Announcements, and Previous Years.
+## Run locally
 
-## GitHub Pages deployment
+Open `index.html` in a browser. The site uses static HTML, CSS, and JavaScript and requires no build step.
 
-1. Open the repository settings.
-2. Go to **Pages**.
-3. Select **Deploy from a branch**.
-4. Choose the `main` branch and the root folder.
-5. Save. GitHub Pages will publish `index.html`.
+## GitHub Pages
 
-## Design
+In repository Settings → Pages, select **Deploy from a branch**, choose `main` and the root folder, then save.
 
-- Academic web typography: Open Sans for body text and Source Serif 4 for headings.
-- IEEE-inspired primary blue: `#00629B`, with IEEE cyan `#00B5E2`.
-- Meta-inspired electric-blue accent: `#0866FF`.
-- Compact vertical spacing, responsive page layouts, horizontal top navigation, and a shared dropdown for secondary conference pages.
-- Original MetaCom conference mark in the same blue palette.
+## Design notes
+
+The layout follows a restrained academic-conference pattern: compact utility-free header, outlined horizontal navigation, short page headings, white content canvas, concise sections, and a small footer. Colors use IEEE blue with a limited Meta-inspired electric-blue accent. No IEEE logo or sponsorship claim is used.
+
+Typography uses Open Sans for body copy and Source Serif 4 for academic headings.
 
 ## Content notes
 
-- The research scope is adapted from the MetaCom 2026 conference description.
-- The site is for MetaCom 2027 and does not carry over the 2026 event's dates, venue, organizers, fees, speakers, or submission deadlines as 2027 facts.
-- 2027 dates, submission deadlines, portal, review details, program, committee, speaker lineup, fees, and publication arrangements are marked as to be announced until confirmed.
-- Venue details identify Yeshiva University Museum at 15 West 16th Street, New York, NY 10011.
-- Additional tracks and programs represented by individual pages are clearly described as pending confirmation until formally announced.
+2027 dates, paper format, submission portal, committees, speakers, registration fees, and detailed program information remain unannounced and are identified as such. The research topics summarize the established MetaCom scope and should be finalized in the official 2027 Call for Papers.
 
-## Images and credits
+Venue: Yeshiva University Museum, 15 West 16th Street, New York, NY 10011. See the museum's official directions page for current transit guidance.
+
+## Images
 
 - New York skyline / Brooklyn Bridge: Bpp88520, CC0 1.0, Wikimedia Commons: https://commons.wikimedia.org/wiki/File:NY_brooklyn_bridge.png
 - Center for Jewish History exterior: Gryffindor, Public Domain, Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Center_for_Jewish_History_NYC.jpg
