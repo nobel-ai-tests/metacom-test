@@ -2,7 +2,7 @@
   const header = document.querySelector(".site-header");
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".primary-nav");
-  const navLinks = [...document.querySelectorAll('.primary-nav a[href^="#"]')];
+  const navLinks = [...document.querySelectorAll(".primary-nav a")];
 
   const closeMenu = () => {
     if (!toggle || !nav) return;
