@@ -11,7 +11,7 @@
     <a href="registration.html">Registration</a>
     <a href="venue.html">Venue</a>
     <details class="nav-dropdown">
-      <summary>More <span aria-hidden="true">⌄</span></summary>
+      <summary>More <span class="nav-chevron" aria-hidden="true"></span></summary>
       <div class="nav-dropdown-panel">
         <a href="author-information.html">Author Information</a>
         <a href="submissions.html">Submission Guidelines</a>
@@ -46,6 +46,14 @@
   `;
   if (nav) nav.innerHTML = navMarkup;
   const navLinks = [...document.querySelectorAll(".primary-nav a")];
+  const currentFile = window.location.pathname.split("/").filter(Boolean).pop() || "index.html";
+  navLinks.forEach((link) => {
+    const target = (link.getAttribute("href") || "").split("#")[0];
+    if (target && target === currentFile) {
+      link.setAttribute("aria-current", "page");
+      link.classList.add("active");
+    }
+  });
 
   const closeMenu = () => {
     if (!toggle || !nav) return;
@@ -61,7 +69,11 @@
       toggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
       nav.classList.toggle("is-open", !isOpen);
     });
-    navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+    navLinks.forEach((link) => link.addEventListener("click", () => {
+      closeMenu();
+      const dropdown = nav.querySelector(".nav-dropdown");
+      if (dropdown) dropdown.open = false;
+    }));
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") closeMenu();
     });
