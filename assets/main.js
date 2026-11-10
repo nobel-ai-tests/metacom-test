@@ -33,6 +33,8 @@
     if (href.split("#")[0] === current) {
       link.classList.add("active");
       link.setAttribute("aria-current", "page");
+      const dropdown = link.closest(".nav-dropdown");
+      if (dropdown) dropdown.classList.add("has-active");
     }
   });
   if (header) {
