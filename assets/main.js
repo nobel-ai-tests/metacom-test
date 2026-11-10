@@ -4,7 +4,6 @@
   const nav = document.querySelector(".primary-nav");
   const navMarkup = `
     <a href="index.html">Home</a>
-    <a href="index.html#about">About</a>
     <a href="call-for-papers.html">Call for Papers</a>
     <a href="program.html">Program</a>
     <a href="committees.html">Committees</a>
